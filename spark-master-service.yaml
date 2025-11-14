@@ -1,6 +1,6 @@
 ﻿# Spark Master Service
 kind: Service
-apiVersion: v1
+apiVersion: apps/v1
 metadata:
   name: spark-master
 spec:
