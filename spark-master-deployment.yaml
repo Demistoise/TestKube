@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: bitnami/spark:latest
+          image: dperdices/spark:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 7077
