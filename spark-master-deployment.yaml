@@ -1,4 +1,4 @@
-﻿apiVersion: v1
+﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spark-master
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: cap1462_16/spark-master:latest
+          image: bitnami/spark:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 7077
