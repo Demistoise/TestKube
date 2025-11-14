@@ -1,0 +1,21 @@
+﻿kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: spark-master
+  replicas: 1
+  selector:
+    matchLabels:
+      component: spark-master
+    template:
+      metadata:
+        labels:
+          component: spark-master
+    spec:
+      containers:
+        - name: spark-master
+          image: cap1462_16/spark-master:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 7077
+          - containerPort: 8080
+
