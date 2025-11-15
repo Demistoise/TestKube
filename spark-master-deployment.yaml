@@ -16,8 +16,11 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: cap1462_16/spark-master:latest
+          image: bitnami/spark:latest
           imagePullPolicy: IfNotPresent
+          env:
+            - name: SPARK_MODE
+              value: master
           ports:
             - containerPort: 7077
             - containerPort: 8080
