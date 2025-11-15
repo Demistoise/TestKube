@@ -1,6 +1,6 @@
 ﻿# Spark Master Service
 kind: Service
-apiVersion: apps/v1
+apiVersion: v1
 metadata:
   name: spark-master
 spec:
@@ -14,10 +14,3 @@ spec:
       targetPort: 7077
   selector:
     component: spark-master
-  resources:
-    requests:
-      cpu: "500m"
-      memory: "256Mi"
-    limits:
-      cpu: "500m"
-      memory: "256Mi"
