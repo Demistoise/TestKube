@@ -9,7 +9,7 @@ spec:
     - name: webui
       port: 8080
       targetPort: 8080
-    - name: spark
+    - name: spark-master
       port: 7077
       targetPort: 7077
   selector:

@@ -1,0 +1,14 @@
+﻿apiVersion: apps/v1
+kind: Service
+metadata:
+  name: spark-worker
+  labels:
+    app: spark
+    role: worker
+spec:
+  ports:
+    # the port that this service should serve on
+  - port: 7077
+  selector:
+    app: spark
+    role: worker
