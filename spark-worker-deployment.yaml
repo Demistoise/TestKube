@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: spark-worker
-          image: cap1462_16/spark-worker:latest
+          image: dperdices/spark-worker:latest
           resources:
             requests:
               cpu: 100m
