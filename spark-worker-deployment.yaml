@@ -13,8 +13,8 @@ spec:
   template:
     metadata:
       labels:
-        app: redis
-        role: follower
+        app: spark
+        role: worker
     spec:
       containers:
       - name: spark-worker
