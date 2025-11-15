@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: cap1462_16/spark:latest
+          image: cap1462_16/spark-master:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 7077
