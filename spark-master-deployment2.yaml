@@ -1,21 +1,21 @@
 ﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spark-master-a
+  name: spark-master-b
   labels:
-    component: spark-master-a
+    component: spark-master-b
 spec:
   replicas: 1
   selector:
     matchLabels:
-      component: spark-master-a
+      component: spark-master-b
   template:
     metadata:
       labels:
-        component: spark-master-a
+        component: spark-master-b
     spec:
       containers:
-        - name: spark-master-a
+        - name: spark-master-b
           image: dperdices/spark-master:latest
           imagePullPolicy: IfNotPresent
           env:
