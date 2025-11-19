@@ -21,6 +21,9 @@ spec:
         - name: spark-master-b
           image: dperdices/spark-master:latest
           imagePullPolicy: IfNotPresent
+          env:
+            - name: SPARK_MASTER_HOST
+              value: spark-master-b               # <- nombre del Service B
           ports:
             - containerPort: 7077
             - containerPort: 8080
