@@ -22,6 +22,8 @@ spec:
           image: dperdices/spark-master:latest
           imagePullPolicy: IfNotPresent
           env:
+            - name: SPARK_MODE
+              value: master
             - name: SPARK_MASTER_HOST
               value: spark-master-b               # <- nombre del Service B
           ports:

@@ -15,10 +15,10 @@ spec:
       containers:
         - name: spark-worker-b
           image: dperdices/spark-worker:latest
+          imagePullPolicy: IfNotPresent
           env:
             - name: SPARK_MASTER
               value: spark://spark-master-b:7077
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
           resources:

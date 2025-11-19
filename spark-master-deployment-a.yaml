@@ -19,6 +19,11 @@ spec:
         - name: spark-master
           image: dperdices/spark-master:latest
           imagePullPolicy: IfNotPresent
+          env:
+            - name: SPARK_MODE
+              value: master
+            - name: SPARK_MASTER_HOST
+              value: spark-master-a
           ports:
             - containerPort: 7077
             - containerPort: 8080
