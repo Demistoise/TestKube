@@ -1,7 +1,7 @@
 ﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spark-master
+  name: spark-master-a
   labels:
     app: spark
     role: master
@@ -9,11 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: spark-master
+      component: spark-master-a
   template:
     metadata:
       labels:
-        component: spark-master
+        component: spark-master-a
     spec:
       containers:
         - name: spark-master

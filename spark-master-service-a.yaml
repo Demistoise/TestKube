@@ -1,11 +1,11 @@
 ﻿kind: Service
 apiVersion: v1
 metadata:
-  name: spark-master
+  name: spark-master-a
 spec:
   type : LoadBalancer
   selector:
-    component: spark-master
+    component: spark-master-a
   ports:
     - name: webui
       port: 8080
