@@ -16,7 +16,7 @@ spec:
         component: spark-master-a
     spec:
       containers:
-        - name: spark-master
+        - name: spark-master-a
           image: dperdices/spark-master:latest
           imagePullPolicy: IfNotPresent
           env:
